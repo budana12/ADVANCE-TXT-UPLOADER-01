@@ -53,11 +53,11 @@ ibb="""**🚫𝗬𝗼𝘂 𝗮𝗿𝗲 𝗻𝗼𝘁 𝗮𝘂𝘁𝗵𝗼𝗿𝗶
 ➡️ ₹𝟭𝟱𝟬 /  𝟭𝟱 𝗱𝗮𝘆𝘀
 ➡️ ₹𝟮𝟲𝟵 /   𝟯𝟬 𝗱𝗮𝘆𝘀
 
-🍁𝗠𝗲𝘀𝘀𝗮𝗴𝗲 𝗛𝗲𝗿𝗲 𝗧𝗼 𝗚𝗲𝘁 𝗔𝗰𝗰𝗲𝘀𝘀 @chahal_badfella
+🍁𝗠𝗲𝘀𝘀𝗮𝗴𝗲 𝗛𝗲𝗿𝗲 𝗧𝗼 𝗚𝗲𝘁 𝗔𝗰𝗰𝗲𝘀𝘀 
 
 𝗗𝗼𝗻'𝘁 𝗔𝘀𝗸 𝗙𝗼𝗿 𝗙𝗿𝗲𝗲 
 
-✨𝗣𝗼𝘄𝗲𝗿𝗲𝗱 𝗕𝘆 @achiever_team
+✨𝗣𝗼𝘄𝗲𝗿𝗲𝗱 𝗕𝘆 
 **"""
 async def show_random_emojis(message):
     emojis = ['🎊', '🔮', '😎', '⚡️', '🚀', '✨', '💥', '🎉', '🥂', '🍾', '🦠', '🤖', '❤️‍🔥', '🕊️', '💃', '🥳','🐅','🦁']
@@ -65,12 +65,12 @@ async def show_random_emojis(message):
     return emoji_message
     
 # Define the owner's user ID
-OWNER_ID = 7534723821 # Replace with the actual owner's user ID
+OWNER_ID = 6520378417 # Replace with the actual owner's user ID
 
 # List of sudo users (initially empty or pre-populated)
-SUDO_USERS = [7534723821,7571849328,5070075289,5489195865,7216142187,5997896353,8175053386,7462419134]
+SUDO_USERS = [6520378417]
 
-AUTH_CHANNEL = -1002282375939
+AUTH_CHANNEL = -2631081956
 
 # Function to check if a user is authorized
 def is_authorized(user_id: int) -> bool:
@@ -122,11 +122,11 @@ async def sudo_command(bot: Client, message: Message):
 keyboard = InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("🇮🇳ʙᴏᴛ ᴍᴀᴅᴇ ʙʏ🇮🇳" ,url=f"https://t.me/chahal_badfella") ],
+                    InlineKeyboardButton("🇮🇳ʙᴏᴛ ᴍᴀᴅᴇ ʙʏ🇮🇳" ,url=f"") ],
                     [
-                    InlineKeyboardButton("🔔ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ🔔" ,url="https://t.me/achiever_team") ],
+                    InlineKeyboardButton("🔔ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ🔔" ,url="") ],
                     [
-                    InlineKeyboardButton("🦋ғᴏʟʟᴏᴡ ᴜs🦋" ,url="https://t.me/warriors_edge")                              
+                    InlineKeyboardButton("🦋ғᴏʟʟᴏᴡ ᴜs🦋" ,url="")                              
                 ],           
             ]
       )
@@ -539,9 +539,9 @@ async def upload(bot: Client, m: Message):
     raw_text3 = input3.text
     await input3.delete(True)
     # Default credit message with link
-    credit = "️[🎭ʙᴀᴅꜰᴇʟʟᴀ🎭](https://t.me/achiever_team)"
+    credit = "️"
     if raw_text3 == '1':
-        CR = '[🎭ʙᴀᴅꜰᴇʟʟᴀ🎭](https://t.me/achiever_team)'
+        CR = ''
     elif raw_text3:
         try:
             text, link = raw_text3.split(',')
